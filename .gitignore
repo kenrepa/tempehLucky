@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Gweb/Views/Home/Contact.cshtml
+/Gweb/Views/Home/About.cshtml
+/Gweb/Views/Home/About.cshtml
