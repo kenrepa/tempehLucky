@@ -110,7 +110,7 @@ namespace Gweb.Controllers
             itemList.items.Add(new Item()
             {
                 name = "Item Name comes here",
-                currency = "USD",
+                currency = "CAD",
                 price = "1",
                 quantity = "1",
                 sku = "sku"
