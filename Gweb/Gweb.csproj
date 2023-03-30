@@ -197,9 +197,10 @@
     <Content Include="img\images\loading.gif" />
     <Content Include="img\images\next.png" />
     <Content Include="img\images\prev.png" />
+    <Content Include="img\luckytempeh.png" />
     <Content Include="img\lightbox-close.png" />
     <Content Include="img\logo.png" />
-    <Content Include="img\luckytempeh.png" />
+    <Content Include="img\luckytempeh1.png" />
     <Content Include="img\map.jpg" />
     <Content Include="img\new-latter.jpg" />
     <Content Include="img\service-img.png" />

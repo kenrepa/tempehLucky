@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Gweb
 {
-    public class PaypalConfiguration
+    public static class PaypalConfiguration
     {
         public readonly static string ClientId;
         public readonly static string ClientSecret;
