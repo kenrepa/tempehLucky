@@ -125,7 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="PaypalConfiguration.cs" />
+    <Compile Include="Models\PaypalConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,14 +193,17 @@
     <Content Include="img\default\lightbox-prev.png" />
     <Content Include="img\default\nav-arrows-next.png" />
     <Content Include="img\default\nav-arrows-prev.png" />
+    <Content Include="img\facebook %281%29.png" />
+    <Content Include="img\facebook.png" />
     <Content Include="img\images\close.png" />
     <Content Include="img\images\loading.gif" />
     <Content Include="img\images\next.png" />
     <Content Include="img\images\prev.png" />
+    <Content Include="img\instagram.png" />
     <Content Include="img\luckytempeh.png" />
     <Content Include="img\lightbox-close.png" />
     <Content Include="img\logo.png" />
-    <Content Include="img\luckytempeh1.png" />
+    <Content Include="img\mail.png" />
     <Content Include="img\map.jpg" />
     <Content Include="img\new-latter.jpg" />
     <Content Include="img\service-img.png" />
@@ -216,6 +219,7 @@
     <Content Include="img\work4.jpg" />
     <Content Include="img\work5.jpg" />
     <Content Include="img\work6.jpg" />
+    <Content Include="img\youtube %281%29.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\et-line.eot" />
@@ -276,7 +280,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Paypal\" />
   </ItemGroup>
   <ItemGroup>

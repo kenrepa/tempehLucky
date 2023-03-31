@@ -109,9 +109,9 @@ namespace Gweb.Controllers
             //Adding Item Details like name, currency, price etc  
             itemList.items.Add(new Item()
             {
-                name = "Item Name comes here",
+                name = "Non-GMO Tempeh",
                 currency = "CAD",
-                price = "1",
+                price = "10",
                 quantity = "1",
                 sku = "sku"
             });
