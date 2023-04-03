@@ -110,7 +110,7 @@ namespace Gweb.Controllers
             itemList.items.Add(new Item()
             {
                 name = "Non-GMO Tempeh",
-                currency = "CAD",
+                currency = "USD",
                 price = "10",
                 quantity = "1",
                 sku = "sku"
