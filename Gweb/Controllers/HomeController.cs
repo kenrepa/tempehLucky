@@ -110,7 +110,7 @@ namespace Gweb.Controllers
             itemList.items.Add(new Item()
             {
                 name = "Item Name comes here",
-                currency = "USD",
+                currency = "CAD",
                 price = "1",
                 quantity = "1",
                 sku = "sku"
@@ -135,7 +135,7 @@ namespace Gweb.Controllers
             //Final amount with details  
             var amount = new Amount()
             {
-                currency = "USD",
+                currency = "CAD",
                 total = "3", // Total must be equal to sum of tax, shipping and subtotal.  
                 details = details
             };
