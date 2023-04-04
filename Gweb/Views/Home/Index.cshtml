@@ -1,7 +1,7 @@
-﻿@{
+﻿@model Gweb.Models.PayInfo
+@{
     ViewBag.Title = "Home Page";
 }
-
 <div class="wrapper">
     <section id="banner">
         <div class="container">
@@ -84,310 +84,314 @@
         </div>
     </section>
     @*<section id="counter">
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    <h2>FUN FACTS</h2>
-                    <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".3s">
-                        <i class="ion-code"></i>
-                        <p class="count-text">
-                            <span class="counter-digit">136800 </span> k
-                        </p>
-                        <p>Lines Coded</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".5s">
-                        <i class="ion-compass"></i>
-                        <p class="count-text">
-                            <span class="counter-digit">7800 </span> +
-                        </p>
-                        <p>Lines Coded</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".7s">
-                        <i class="ion-compose"></i>
-                        <p class="count-text">
-                            <span class="counter-digit">399</span>
-                        </p>
-                        <p>Lines Coded</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".9s">
-                        <i class="ion-image"></i>
-                        <p class="count-text">
-                            <span class="counter-digit">9995</span>
-                        </p>
-                        <p>Lines Coded</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>*@
-    @*<section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="container">
+                <div class="row">
                     <div class="title">
-                        <h2>LATEST WORKS</h2>
-                        <p>
-                            Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously
-                        </p>
+                        <h2>FUN FACTS</h2>
+                        <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
                     </div>
-                    <div class="block">
-                        <div class="recent-work-mixMenu">
-                            <ul>
-                                <li><button class="filter" data-filter="all">All</button></li>
-                                <li><button class="filter" data-filter=".category-2">Printing</button></li>
-                                <li><button class="filter" data-filter=".category-1">Web</button></li>
-                                <li><button class="filter" data-filter=".category-2">Illustration</button></li>
-                                <li><button class="filter" data-filter=".category-1">Media</button></li>
-                            </ul>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".3s">
+                            <i class="ion-code"></i>
+                            <p class="count-text">
+                                <span class="counter-digit">136800 </span> k
+                            </p>
+                            <p>Lines Coded</p>
                         </div>
-                        <div class="recent-work-pic">
-                            <ul id="mixed-items">
-                                <li class="mix category-1 col-md-4 col-xs-6" data-my-order="1">
-                                    <a class="example-image-link" href="img/work1.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work1.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mix category-2 col-md-4 col-xs-6" data-my-order="2">
-                                    <a class="example-image-link" href="img/work2.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work2.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mix category-1 col-md-4 col-xs-6" data-my-order="3">
-                                    <a class="example-image-link" href="img/work3.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work3.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mix category-2 col-md-4 col-xs-6" data-my-order="4">
-                                    <a class="example-image-link" href="img/work4.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work4.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mix category-1 col-md-4 col-xs-6" data-my-order="5">
-                                    <a class="example-image-link" href="img/work5.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work5.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mix category-2 col-md-4 col-xs-6" data-my-order="6">
-                                    <a class="example-image-link" href="img/work6.jpg" data-lightbox="example-set">
-                                        <img class="img-responsive" src="img/work6.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Web design</h3>
-                                            <i class="ion-ios-plus-empty"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".5s">
+                            <i class="ion-compass"></i>
+                            <p class="count-text">
+                                <span class="counter-digit">7800 </span> +
+                            </p>
+                            <p>Lines Coded</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".7s">
+                            <i class="ion-compose"></i>
+                            <p class="count-text">
+                                <span class="counter-digit">399</span>
+                            </p>
+                            <p>Lines Coded</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".9s">
+                            <i class="ion-image"></i>
+                            <p class="count-text">
+                                <span class="counter-digit">9995</span>
+                            </p>
+                            <p>Lines Coded</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>*@
+        </section>*@
+    @*<section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>LATEST WORKS</h2>
+                            <p>
+                                Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="recent-work-mixMenu">
+                                <ul>
+                                    <li><button class="filter" data-filter="all">All</button></li>
+                                    <li><button class="filter" data-filter=".category-2">Printing</button></li>
+                                    <li><button class="filter" data-filter=".category-1">Web</button></li>
+                                    <li><button class="filter" data-filter=".category-2">Illustration</button></li>
+                                    <li><button class="filter" data-filter=".category-1">Media</button></li>
+                                </ul>
+                            </div>
+                            <div class="recent-work-pic">
+                                <ul id="mixed-items">
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="1">
+                                        <a class="example-image-link" href="img/work1.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work1.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="2">
+                                        <a class="example-image-link" href="img/work2.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work2.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="3">
+                                        <a class="example-image-link" href="img/work3.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work3.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="4">
+                                        <a class="example-image-link" href="img/work4.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work4.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="5">
+                                        <a class="example-image-link" href="img/work5.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work5.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="6">
+                                        <a class="example-image-link" href="img/work6.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work6.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
     @*<section id="play-video">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">GET THE TEMPLATE</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".5s">
-                            Dantes remained confused and silent by this explanation of
-                            the
-                        </p>
-                        <a href="https://vimeo.com/channels/staffpicks/145743834" class="html5lightbox" data-width=800
-                           data-height=400>
-                            <div class="button ion-ios-play-outline wow zoomIn" data-wow-delay=".3s"></div>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="wow fadeInUp" data-wow-delay=".3s">GET THE TEMPLATE</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".5s">
+                                Dantes remained confused and silent by this explanation of
+                                the
+                            </p>
+                            <a href="https://vimeo.com/channels/staffpicks/145743834" class="html5lightbox" data-width=800
+                               data-height=400>
+                                <div class="button ion-ios-play-outline wow zoomIn" data-wow-delay=".3s"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>*@
+        </section>*@
     @*<section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>CREATIVE TEAM</h2>
+                        <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s">
+                            <img src="img/team-img1.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Lucky Wibowo <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".6s">
+                            <img src="img/team-img2.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Andy  <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".9s">
+                            <img src="img/team-img3.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>ROBERT SMITH <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <section id="pricing-table">
         <div class="container">
             <div class="row">
                 <div class="title">
-                    <h2>CREATIVE TEAM</h2>
-                    <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
+                    <h2>PRICING TABLE</h2>
+                    <p>Check out these unbeatable prices. <br> You won't want to miss it.'</p>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="block wow fadeInLeft" data-wow-delay=".3s">
-                        <img src="img/team-img1.jpg" alt="">
-                        <div class="team-overlay">
-                            <h3>Lucky Wibowo <span>Product Designer</span></h3>
-                            <span class="icon"><i class="ion-quote"></i></span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-sm-4 col-xs-6">
-                    <div class="block wow fadeInLeft" data-wow-delay=".6s">
-                        <img src="img/team-img2.jpg" alt="">
-                        <div class="team-overlay">
-                            <h3>Andy  <span>Product Designer</span></h3>
-                            <span class="icon"><i class="ion-quote"></i></span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-sm-4 col-xs-6">
-                    <div class="block wow fadeInLeft" data-wow-delay=".9s">
-                        <img src="img/team-img3.jpg" alt="">
-                        <div class="team-overlay">
-                            <h3>ROBERT SMITH <span>Product Designer</span></h3>
-                            <span class="icon"><i class="ion-quote"></i></span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>*@
-<section id="pricing-table">
-    <div class="container">
-        <div class="row">
-            <div class="title">
-                <h2>PRICING TABLE</h2>
-                <p>Check out these unbeatable prices. <br> You won't want to miss it.'</p>
-            </div>
-            <div class="col-md-4 col">
-                <div class="block text-center wow fadeInLeft" data-wow-delay=".3s">
-                    <ul>
-                        <li>
-                            <h4>Regular Tempeh</h4>
-                            <p>&#36; 6 <span>/pcs</span></p>
-                        </li>
-                        <li>
-                            <p>Weight: 300g</p>
-                        </li>
-                        <li>
-                            <p>100% Organic</p>
-                        </li>
-                        <li>
-                            <p>Gluten Free</p>
-                        </li>
-                        <li>
-                            <p>High Protein</p>
-                        </li>
-                        <li>
-                            <p>Pure Plant-based</p>
-                        </li>
-                        <li>
-                            <p>Regular Soy Beans</p>
-                        </li>
-                        <li>
-                            <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
-                            <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
+                <div class="col-md-4 col">
+                    <div class="block text-center wow fadeInLeft" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Regular Tempeh</h4>
+                                <p>&#36; 6 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <p>Weight: 300g</p>
+                            </li>
+                            <li>
+                                <p>100% Organic</p>
+                            </li>
+                            <li>
+                                <p>Gluten Free</p>
+                            </li>
+                            <li>
+                                <p>High Protein</p>
+                            </li>
+                            <li>
+                                <p>Pure Plant-based</p>
+                            </li>
+                            <li>
+                                <p>Regular Soy Beans</p>
+                            </li>
+                            <li>
+                                <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
+                                <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
 
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col">
-                <div class="block text-center wow zoomIn" data-wow-delay=".3s">
-                    <ul>
-                        <li>
-                            <h4>Non-GMO Tempeh</h4>
-                            <p>&#36; 10 <span>/pcs</span></p>
-                        </li>
-                        <li>
-                            <p>Weight: 300g</p>
-                        </li>
-                        <li>
-                            <p>Gluten Free</p>
-                        </li>
-                        <li>
-                            <p>High Protein </p>
-                        </li>
-                        <li>
-                            <p>Pure Plant-based</p>
-                        </li>
-                        <li>
-                            <p><b>Non GMO Soy Bean</b></p>
-                        </li>
-                        <li>
-                           
-                        </li>
-                        <li>
-                            <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
-                            <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
-                        </li>
-                    </ul>
+                <div class="col-md-4 col">
+                    <div class="block text-center wow zoomIn" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Non-GMO Tempeh</h4>
+                                <p>&#36; 10 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <p>Weight: 300g</p>
+                            </li>
+                            <li>
+                                <p>Gluten Free</p>
+                            </li>
+                            <li>
+                                <p>High Protein </p>
+                            </li>
+                            <li>
+                                <p>100% Organic</p>
+                            </li>
+                            <li>
+                                <p>Pure Plant-based</p>
+                            </li>
+                            <li>
+                                <p><b>Non GMO Soy Bean</b></p>
+                            </li>
+                            <li>
+                                @using (Html.BeginForm("PaymentWithPaypal", "Home", FormMethod.Post))
+                                {
+                                    @Html.HiddenFor(m => m.Quantity)
+                                    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
+                                    <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home", new { Quantity = ViewData["Quantity"] })'" />
+                                }
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col">
-                <div class="block text-center wow fadeInRight" data-wow-delay=".3s">
-                    <ul>
-                        <li>
-                            <h4>Mini Tempeh</h4>
-                            <p>&#36; 6 <span>/pcs</span></p>
-                        </li>
-                        <li>
-                            <p>Weight: 150g</p>
-                        </li>
-                        <li>
-                            <p>100% Organic</p>
-                        </li>
-                        <li>
-                            <p>Gluten Free</p>
-                        </li>
-                        <li>
-                            <p>High Protein </p>
-                        </li>
-                        <li>
-                            <p>Plant-based Protein</p>
-                        </li>
-                        <li>
-                            <p>Non GMO Soy Bean</p>
-                        </li>
-                        <li>
-                            <!-- Replace "test" with your own sandbox Business account app client ID -->
-                            <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
-                            <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
-                        </li>
-                    </ul>
+                <div class="col-md-4 col">
+                    <div class="block text-center wow fadeInRight" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Tempeh Bar</h4>
+                                <p>&#36; 6 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <p>Weight: 150g</p>
+                            </li>
+                            <li>
+                                <p>100% Organic</p>
+                            </li>
+                            <li>
+                                <p>Gluten Free</p>
+                            </li>
+                            <li>
+                                <p>High Protein </p>
+                            </li>
+                            <li>
+                                <p>Plant-based Protein</p>
+                            </li>
+                            <li>
+                                <p>Non GMO Soy Bean</p>
+                            </li>
+                            <li>
+                                <!-- Replace "test" with your own sandbox Business account app client ID -->
+                                <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
+                                <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!--<section id="blog">
         <div class="container">
@@ -619,26 +623,26 @@
             </div>
         </div>
     </section> -->
-<section id="contact-form">
-    <div class="container">
-        <div class="row">
-            <div class="title">
-                <h2>CONTACT US</h2>
-                |<div><a href="mailto:luckytempeh@gmail.com">Send us a message.</a></div>
-            </div>
-            <div class="col-md-6 col">
-                <!-- map -->
-                <div class="map">
-                    <div id="googleMap"></div>
+    <section id="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>CONTACT US</h2>
+                    |<div><a href="mailto:luckytempeh@gmail.com">Send us a message.</a></div>
                 </div>
-                <!--/map-->
+                <div class="col-md-6 col">
+                    <!-- map -->
+                    <div class="map">
+                        <div id="googleMap"></div>
+                    </div>
+                    <!--/map-->
 
-            </div>
-            <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
 
+                </div>
             </div>
         </div>
-    </div>
 
-</section>
+    </section>
 </div>

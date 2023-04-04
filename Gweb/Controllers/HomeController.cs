@@ -109,12 +109,11 @@ namespace Gweb.Controllers
             //Adding Item Details like name, currency, price etc  
             itemList.items.Add(new Item()
             {
-                name = "Item Name comes here",
+                name = "Test Store",
                 currency = "CAD",
                 price = "1",
-                quantity = "1",
-                sku = "sku"
-            });
+                quantity = "1"
+            }); ;
             var payer = new Payer()
             {
                 payment_method = "paypal"
@@ -143,8 +142,8 @@ namespace Gweb.Controllers
             // Adding description about the transaction  
             transactionList.Add(new Transaction()
             {
-                description = "Transaction description",
-                invoice_number = "your generated invoice number", //Generate an Invoice No  
+                description = "Lucky Tempeh",
+                invoice_number = "LT" + DateTime.Now.ToString("yyyyMMddhhmmsszzz"), //Generate an Invoice No  
                 amount = amount,
                 item_list = itemList
             });

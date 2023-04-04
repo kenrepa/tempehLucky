@@ -54,6 +54,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,6 +129,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\PayInfo.cs" />
     <Compile Include="PaypalConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,6 +201,7 @@
     <Content Include="img\default\nav-arrows-prev.png" />
     <Content Include="img\facebook %281%29.png" />
     <Content Include="img\facebook.png" />
+    <Content Include="img\FullBanner.png" />
     <Content Include="img\images\close.png" />
     <Content Include="img\images\loading.gif" />
     <Content Include="img\images\next.png" />
@@ -234,10 +239,6 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\weblysleekuil.ttf" />
     <Content Include="fonts\weblysleekuisb.ttf" />
-    <Content Include="img\banner1.webp" />
-    <Content Include="img\banner2.webp" />
-    <Content Include="img\banner3.webp" />
-    <Content Include="img\banner4.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\html5lightbox.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
@@ -282,7 +283,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Paypal\" />
   </ItemGroup>
   <ItemGroup>
