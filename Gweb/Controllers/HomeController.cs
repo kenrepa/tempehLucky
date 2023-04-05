@@ -39,6 +39,7 @@ namespace Gweb.Controllers
                 //A resource representing a Payer that funds a payment Payment Method as paypal  
                 //Payer Id will be returned when payment proceeds or click to pay  
                 string payerId = Request.Params["PayerID"];
+                string payQuant = Request.Form["Quantity"];
                 if (string.IsNullOrEmpty(payerId))
                 {
                     //this section will be executed first because PayerID doesn't exist  
@@ -51,7 +52,7 @@ namespace Gweb.Controllers
                     var guid = Convert.ToString((new Random()).Next(100000));
                     //CreatePayment function gives us the payment approval url  
                     //on which payer is redirected for paypal account payment  
-                    var createdPayment = this.CreatePayment(apiContext, baseURI + "guid=" + guid);
+                    var createdPayment = this.CreatePayment(apiContext, payQuant, baseURI + "guid=" + guid);
                     //get links returned from paypal in response to Create function call  
                     var links = createdPayment.links.GetEnumerator();
                     string paypalRedirectUrl = null;
@@ -85,7 +86,7 @@ namespace Gweb.Controllers
                 return View("FailureView");
             }
             //on successful payment, show success page to user.  
-            return View("SuccessView");
+            return View("Index");
         }
         private Payment ExecutePayment(APIContext apiContext, string payerId, string paymentId)
         {
@@ -99,7 +100,7 @@ namespace Gweb.Controllers
             };
             return this.payment.Execute(apiContext, paymentExecution);
         }
-        private Payment CreatePayment(APIContext apiContext, string redirectUrl)
+        private Payment CreatePayment(APIContext apiContext, string payQuant, string redirectUrl)
         {
             //create itemlist and add item objects to it  
             var itemList = new ItemList()
