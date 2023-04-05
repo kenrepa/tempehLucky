@@ -13,8 +13,9 @@
                             Healthy and nutritious food with high protein, prebiotics and wide array of vitamins and minerals.
                         </h2>
                         <div class="buttons">
+
                             <a href="#pricing-table" class="btn btn-learn">Order Now</a>
-                            <a href="#pricing-table" class="btn btn-learn">View our assortement of tempehs</a>
+                            @*<a href="#pricing-table" class="btn btn-learn">View our assortement of tempehs</a>*@
                         </div>
                     </div>
                 </div>
@@ -291,32 +292,25 @@
                     <div class="block text-center wow fadeInLeft" data-wow-delay=".3s">
                         <ul>
                             <li>
-                                <h4>Regular Tempeh</h4>
+                                <h4>Regular Tempeh 300g</h4>
                                 <p>&#36; 6 <span>/pcs</span></p>
                             </li>
                             <li>
-                                <p>Weight: 300g</p>
+                                <img src="~/img/tempeh1.jpg" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
-                                <p>100% Organic</p>
+                                @using (Html.BeginForm("PaymentWithPaypal", "Home", FormMethod.Post))
+                                {
+                                    @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control" })
+                                    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
+                                    <input type="button" class="btn btn-buy" value="BUY NOW" />
+                                }
                             </li>
-                            <li>
-                                <p>Gluten Free</p>
-                            </li>
-                            <li>
-                                <p>High Protein</p>
-                            </li>
-                            <li>
-                                <p>Pure Plant-based</p>
-                            </li>
-                            <li>
-                                <p>Regular Soy Beans</p>
-                            </li>
-                            <li>
+                            @*<li>
                                 <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
                                 <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home")'" />
 
-                            </li>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
@@ -324,33 +318,18 @@
                     <div class="block text-center wow zoomIn" data-wow-delay=".3s">
                         <ul>
                             <li>
-                                <h4>Non-GMO Tempeh</h4>
+                                <h4>Non-GMO Tempeh 300g</h4>
                                 <p>&#36; 10 <span>/pcs</span></p>
                             </li>
                             <li>
-                                <p>Weight: 300g</p>
-                            </li>
-                            <li>
-                                <p>Gluten Free</p>
-                            </li>
-                            <li>
-                                <p>High Protein </p>
-                            </li>
-                            <li>
-                                <p>100% Organic</p>
-                            </li>
-                            <li>
-                                <p>Pure Plant-based</p>
-                            </li>
-                            <li>
-                                <p><b>Non GMO Soy Bean</b></p>
+                                <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
                                 @using (Html.BeginForm("PaymentWithPaypal", "Home", FormMethod.Post))
                                 {
-                                    @Html.HiddenFor(m => m.Quantity)
+                                    @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control" })
                                     <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
-                                    <input type="button" class="btn btn-buy" value="BUY NOW" onclick="location.href='@Url.Action("PaymentWithPaypal", "Home", new { Quantity = ViewData["Quantity"] })'" />
+                                    <input type="button" class="btn btn-buy" value="BUY NOW" />
                                 }
                             </li>
                         </ul>
@@ -364,22 +343,7 @@
                                 <p>&#36; 6 <span>/pcs</span></p>
                             </li>
                             <li>
-                                <p>Weight: 150g</p>
-                            </li>
-                            <li>
-                                <p>100% Organic</p>
-                            </li>
-                            <li>
-                                <p>Gluten Free</p>
-                            </li>
-                            <li>
-                                <p>High Protein </p>
-                            </li>
-                            <li>
-                                <p>Plant-based Protein</p>
-                            </li>
-                            <li>
-                                <p>Non GMO Soy Bean</p>
+                                <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
                                 <!-- Replace "test" with your own sandbox Business account app client ID -->

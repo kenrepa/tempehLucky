@@ -16,7 +16,8 @@ namespace Gweb.Models
         public decimal SubTotal { get; set; }
         public decimal Total { get; set; }
         public decimal Taxes { get; set; }
-        public decimal Shipping { get; set; }
+        public decimal ShippingFee { get; set; }
+        public string Description { get; set; }
 
     }
 }

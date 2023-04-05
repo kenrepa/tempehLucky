@@ -113,7 +113,7 @@ namespace Gweb.Controllers
                 currency = "CAD",
                 price = "1",
                 quantity = "1"
-            }); ;
+            });
             var payer = new Payer()
             {
                 payment_method = "paypal"

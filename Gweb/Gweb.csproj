@@ -218,6 +218,10 @@
     <Content Include="img\team-img1.jpg" />
     <Content Include="img\team-img2.jpg" />
     <Content Include="img\team-img3.jpg" />
+    <Content Include="img\tempeh1.jpg" />
+    <Content Include="img\tempeh2.jpg" />
+    <Content Include="img\tempeh3.jpg" />
+    <Content Include="img\tempeh4.jpg" />
     <Content Include="img\testimonial.jpg" />
     <Content Include="img\top.png" />
     <Content Include="img\work1.jpg" />
