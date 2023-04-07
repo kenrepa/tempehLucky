@@ -298,7 +298,7 @@
                             <li>
                                 <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
                             </li>
-  
+
                             <li>
                                 @using (Html.BeginForm("PaymentWithPaypal", "Home", FormMethod.Post))
                                 {
@@ -307,6 +307,8 @@
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.Currency, new { Value = "CAD" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Regular Tempeh 300g" })
+
+                                    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
                                     <input type="submit" class="btn btn-buy" value="Buy Now" />
                                 }
                             </li>
@@ -331,6 +333,7 @@
                                     @Html.HiddenFor(m => m.Price, new { Value = "10" })
                                     @Html.HiddenFor(m => m.Currency, new { Value = "CAD" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh 300g" })
+
                                     <input type="submit" class="btn btn-buy" value="Buy Now" />
                                 }
                             </li>
@@ -355,6 +358,8 @@
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.Currency, new { Value = "CAD" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh Bar 150g" })
+
+                                    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
                                     <input type="submit" class="btn btn-buy" value="Buy Now" />
                                 }
                             </li>

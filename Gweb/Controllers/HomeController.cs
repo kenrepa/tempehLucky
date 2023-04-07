@@ -121,9 +121,12 @@ namespace Gweb.Controllers
             itemList.items.Add(new Item()
             {
                 name = p.ItemName,
-                currency = p.Currency,
-                price = p.Price,
-                quantity = p.Quantity
+                currency = "CAD",
+                //currency = p.Currency,
+               // price = p.Price,
+               price = "1",
+                //quantity = p.Quantity
+                quantity = "1"
             });
             var payer = new Payer()
             {
@@ -138,15 +141,20 @@ namespace Gweb.Controllers
             // Adding Tax, shipping and Subtotal details  
             var details = new Details()
             {
-                tax = p.Taxes,
-                shipping = p.ShippingFee,
-                subtotal = p.SubTotal
+                //tax = p.Taxes,
+                //shipping = p.ShippingFee,
+                //subtotal = p.SubTotal
+                tax = "1",
+                shipping = "1",
+                subtotal = "1",
             };
             //Final amount with details  
             var amount = new Amount()
             {
-                currency = p.Currency,
-                total = p.Total, // Total must be equal to sum of tax, shipping and subtotal.  
+               // currency = p.Currency,
+               currency = "CAD",
+               total = "3",
+                //total = p.Total, // Total must be equal to sum of tax, shipping and subtotal.  
                 details = details
             };
             var transactionList = new List<Transaction>();
