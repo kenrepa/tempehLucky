@@ -1,4 +1,5 @@
-﻿using PayPal.Api;
+﻿using Gweb.Models;
+using PayPal.Api;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,16 +31,25 @@ namespace Gweb.Controllers
             return View();
         }
 
-        public ActionResult PaymentWithPaypal(string Cancel = null)
+        public ActionResult PaymentWithPaypal(FormCollection form, string Cancel = null)
         {
             //getting the apiContext  
             APIContext apiContext = PaypalConfiguration.GetAPIContext();
+            PayInfo p = new PayInfo();
             try
             {
                 //A resource representing a Payer that funds a payment Payment Method as paypal  
                 //Payer Id will be returned when payment proceeds or click to pay  
                 string payerId = Request.Params["PayerID"];
-                string payQuant = Request.Form["Quantity"];
+                var subtot = Double.Parse(p.Price) * Double.Parse(p.Quantity);
+                p.Quantity = form["Quantity"];
+                p.Price = form["Price"];
+                p.Currency = form["Currency"];
+                p.ItemName = form["ItemName"];
+                p.SubTotal = subtot.ToString();
+                p.ShippingFee = "2";
+                p.Taxes = (subtot * 0.1495).ToString("{0:0.##}") ;
+                p.Total = (subtot + p.Taxes + 2).ToString();
                 if (string.IsNullOrEmpty(payerId))
                 {
                     //this section will be executed first because PayerID doesn't exist  
@@ -52,7 +62,7 @@ namespace Gweb.Controllers
                     var guid = Convert.ToString((new Random()).Next(100000));
                     //CreatePayment function gives us the payment approval url  
                     //on which payer is redirected for paypal account payment  
-                    var createdPayment = this.CreatePayment(apiContext, payQuant, baseURI + "guid=" + guid);
+                    var createdPayment = this.CreatePayment(apiContext, p, baseURI + "guid=" + guid);
                     //get links returned from paypal in response to Create function call  
                     var links = createdPayment.links.GetEnumerator();
                     string paypalRedirectUrl = null;
@@ -100,7 +110,7 @@ namespace Gweb.Controllers
             };
             return this.payment.Execute(apiContext, paymentExecution);
         }
-        private Payment CreatePayment(APIContext apiContext, string payQuant, string redirectUrl)
+        private Payment CreatePayment(APIContext apiContext, PayInfo p, string redirectUrl)
         {
             //create itemlist and add item objects to it  
             var itemList = new ItemList()
@@ -110,10 +120,10 @@ namespace Gweb.Controllers
             //Adding Item Details like name, currency, price etc  
             itemList.items.Add(new Item()
             {
-                name = "Tempeh Non GMO 300g",
-                currency = "CAD",
-                price = "1",
-                quantity = "1"
+                name = p.ItemName,
+                currency = p.Currency,
+                price = p.Price,
+                quantity = p.Quantity
             });
             var payer = new Payer()
             {
@@ -128,22 +138,22 @@ namespace Gweb.Controllers
             // Adding Tax, shipping and Subtotal details  
             var details = new Details()
             {
-                tax = "1",
-                shipping = "1",
-                subtotal = "1"
+                tax = p.Taxes,
+                shipping = p.ShippingFee,
+                subtotal = p.SubTotal
             };
             //Final amount with details  
             var amount = new Amount()
             {
-                currency = "CAD",
-                total = "3", // Total must be equal to sum of tax, shipping and subtotal.  
+                currency = p.Currency,
+                total = p.Total, // Total must be equal to sum of tax, shipping and subtotal.  
                 details = details
             };
             var transactionList = new List<Transaction>();
             // Adding description about the transaction  
             transactionList.Add(new Transaction()
             {
-                description = "Lucky Tempeh",
+                description = p.ItemName,
                 invoice_number = "LT" + DateTime.Now.ToString("yyyyMMddhhmmsszzz"), //Generate an Invoice No  
                 amount = amount,
                 item_list = itemList
