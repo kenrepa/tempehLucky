@@ -301,9 +301,13 @@
                             <li>
                                 @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
-                                    <b>Qty: </b>@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;" })
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                    </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Regular Tempeh 300g" })
+                                    <br />
                                     <input type="submit" class="btn btn-buy" value="BUY NOW" />
                                 }
                             </li>
@@ -323,9 +327,13 @@
                             <li>
                                 @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
-                                    <b>Qty: </b>@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;" })
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                    </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "10" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh 300g" })
+                                    <br />
                                     <input type="submit" class="btn btn-buy" value="BUY NOW" />
                                 }
                             </li>
@@ -346,9 +354,13 @@
                                 <!-- Replace "test" with your own sandbox Business account app client ID -->
                                 @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
-                                    <b>Qty: </b>@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;" })
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength="2" })</span>
+                                    </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Tempeh Bar 150g" })
+                                    <br />
                                     <input type="submit" class="btn btn-buy" value="BUY NOW" />
                                 }
                             </li>
