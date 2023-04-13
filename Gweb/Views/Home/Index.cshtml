@@ -10,12 +10,12 @@
                     <div class="block">
                         <h1>Lucky Tempeh, high protein food that provides amazing health benefit</h1>
                         <h2>
-                            Healthy and nutritious food with high protein, prebiotics and wide array of vitamins and minerals.
+                            Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals.
                         </h2>
                         <div class="buttons">
 
                             <a href="#pricing-table" class="btn btn-learn">Order Now</a>
-                            @*<a href="#pricing-table" class="btn btn-learn">View our assortement of tempehs</a>*@
+                            <a href="#info_tempeh" class="btn btn-learn">Learn About Tempeh</a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="title">
                         <h2>OUR BEST PRODUCTS</h2>
                         <p>
-                            Our tempeh usez original Indonesian recipe with no added sugar or sodium. <br>
+                            Our tempeh is an original Indonesian recipe with added sugar or sodium. <br>
                             It is 100% organic, and uses high quality soy beans.
                         </p>
                     </div>
@@ -84,52 +84,54 @@
             </div>
         </div>
     </section>
-    @*<section id="counter">
-            <div class="container">
-                <div class="row">
-                    <div class="title">
-                        <h2>FUN FACTS</h2>
-                        <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
+    @*<section>
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>Learn About Tempeh</h2>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight" data-wow-delay=".3s" style="margin-left:50px;">
+                        <h2>Tempeh Vitamins</h2>
+                        <p>
+                            Tempeh contains a multitude of vitamins that can help you stay healthy.
+                            It contains vitamins such as:
+                            - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                            found in meat.
+                            - Vitamin B6, which increases brain function and helps your immune system. <br>
+                        </p>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="block wow fadeInRight" data-wow-delay=".3s">
-                            <i class="ion-code"></i>
-                            <p class="count-text">
-                                <span class="counter-digit">136800 </span> k
-                            </p>
-                            <p>Lines Coded</p>
-                        </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight" data-wow-delay=".5s" style="margin-left:150px;">
+                        <h2>Tempeh Minerals</h2>
+                        <p>
+                            Tempeh contains many minerals. The most notable are the following: <br>
+                            - Calcium <br>
+                            - Iron <br>
+                            - Magnesium<br>
+                            - Phosphorus<br>
+                            - Potassium<br>
+                            - Zinc<br>
+                        </p>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="block wow fadeInRight" data-wow-delay=".5s">
-                            <i class="ion-compass"></i>
-                            <p class="count-text">
-                                <span class="counter-digit">7800 </span> +
-                            </p>
-                            <p>Lines Coded</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="block wow fadeInRight" data-wow-delay=".7s">
-                            <i class="ion-compose"></i>
-                            <p class="count-text">
-                                <span class="counter-digit">399</span>
-                            </p>
-                            <p>Lines Coded</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="block wow fadeInRight" data-wow-delay=".9s">
-                            <i class="ion-image"></i>
-                            <p class="count-text">
-                                <span class="counter-digit">9995</span>
-                            </p>
-                            <p>Lines Coded</p>
-                        </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="block wow fadeInRight" data-wow-delay=".7s" style="margin-left:250px;">
+                        <h2>Tempeh Health Benefits</h2>
+                        <p>
+                            Tempeh has multiple health benefits:
+                            It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                            in comparison to other foods such as tofu.
+                            It can lower cholesterol levels, which can help reduce heart disease.
+                            It can help with weight management as it can make you feel full due
+                            the protein and fiber. <br>
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>*@
+        </div>
+    </section>*@
     @*<section id="portfolio">
             <div class="container">
                 <div class="row">
@@ -296,7 +298,7 @@
                                 <p>&#36; 6 <span>/pcs</span></p>
                             </li>
                             <li>
-                                <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
+                                <img src="~/img/tempeh_img1.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
                                 @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
@@ -322,7 +324,7 @@
                                 <p>&#36; 10 <span>/pcs</span></p>
                             </li>
                             <li>
-                                <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
+                                <img src="~/img/tempeh_img2.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
                                 @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
@@ -356,7 +358,7 @@
                                 {
                                     <div style="display:inline-block">
                                         <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
-                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength="2" })</span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
                                     </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Tempeh Bar 150g" })
@@ -365,6 +367,68 @@
                                 }
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info_tempeh" style="margin-top:10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Learn More About Tempeh</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-easel"></i>
+                        </div>
+                        <h2>Tempeh Vitamins</h2>
+                        <p>
+                            Tempeh contains a multitude of vitamins that can help you stay healthy.
+                            It contains vitamins such as: <br>
+                            - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                            found in meat.<br>
+                            - Vitamin B6, which increases brain function and helps your immune system. <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbucket"></i>
+                        </div>
+                        <h2>Tempeh Minerals</h2>
+                        <p>
+                            Tempeh contains many minerals. The most notable are the following: <br>
+                            - Calcium <br>
+                            - Iron <br>
+                            - Magnesium<br>
+                            - Phosphorus<br>
+                            - Potassium<br>
+                            - Zinc<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbrush"></i>
+                        </div>
+                        <h2>Tempeh Health Benefits</h2>
+                        <p>
+                            Tempeh has multiple health benefits:<br>
+                            It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                            in comparison to other foods such as tofu.<br>
+                            It can lower cholesterol levels, which can help reduce heart disease.<br>
+                            It can help with weight management as it can make you feel full due
+                            the protein and fiber. <br>
+                        </p>
                     </div>
                 </div>
             </div>
