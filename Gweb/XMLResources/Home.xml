@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Resources>
+	<Resource key ="HelloWorldKey">
+		<Language key="EN">Hello World!</Language>
+		<Language key="FR">Bonjour Monde!</Language>
+	</Resource>
+</Resources>
