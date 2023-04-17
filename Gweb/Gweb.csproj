@@ -139,6 +139,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,6 +156,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dd.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\icon.css" />
     <Content Include="Content\image.css" />
@@ -272,6 +274,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.counterup.min.js" />
+    <Content Include="Scripts\jquery.dd.js" />
     <Content Include="Scripts\jquery.mixitup.js" />
     <Content Include="Scripts\jquery.nav.js" />
     <Content Include="Scripts\jquery.scrollUp.js" />
@@ -280,6 +283,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Layout.js" />
     <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\min\html5lightbox.min.js" />
@@ -308,6 +312,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\Paypal\" />
   </ItemGroup>
   <ItemGroup>

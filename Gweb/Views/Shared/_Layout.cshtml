@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="~/Content/image.css">
     <link rel="stylesheet" href="~/Content/icon.css">
     <link rel="stylesheet" href="~/Content/style.css">
+    <link rel="stylesheet" href="~/Content/dd.css">
     <link rel="stylesheet" href="~/Content/responsive.css">
 
     @*@Styles.Render("~/Content/css")
@@ -54,12 +55,19 @@
             <!-- main nav -->
             <nav class="collapse navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav menu">
-                    <li><a href="#top"><asp:Label ID="homelbl" runat="server" Text="<%$Resources:Home, MenuHome%>"></asp:Label></a></li>
-                    <li><a href="#pricing-table">Price</a></li>
-                    <li><a href="#contact-form">Contact</a></li>
+
+                    <li>@Html.ActionLink(Resources.Resource.MenuHome, "Index", "Home", protocol: null, hostName: null, fragment: "top", routeValues: null, htmlAttributes: null)</li>
+                    <li>
+                        @Html.ActionLink(Resources.Resource.MenuPrice, "Index", "Home", protocol: null, hostName: null, fragment: "pricing-table", routeValues: null, htmlAttributes: null)
+                    </li>
+                    <li>
+                        @Html.ActionLink(Resources.Resource.MenuContact, "Index", "Home", protocol: null, hostName: null, fragment: "contact-form", routeValues: null, htmlAttributes: null)
+                    </li>
+                    @*<li><a href="#pricing-table">Price</a></li>
+                    <li><a href="#contact-form">Contact</a></li>*@
                 </ul>
             </nav>
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <nav class="collapse navbar-collapse navbar-center" role="navigation">
                 <ul id="nav" class="nav navbar-nav menu">
                     <li>
                         <select class="currentCulture" name="selectCulture" id="_cultureDDL" onchange="changeCurrentCulture(this.value)">
@@ -122,6 +130,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/jquery.dd.js")
+    @Scripts.Render("~/Scripts/Layout.js")
     @RenderSection("scripts", required: false)
 
     <script type="text/javascript">
