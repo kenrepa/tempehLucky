@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace Gweb.Controllers
 {
-    public class HomeController : BaseController
+    public class HomeController :BaseController
     {
 
         private Payment payment;

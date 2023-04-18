@@ -13,10 +13,10 @@ namespace Gweb.Models
         {
             get
             {
-                if (Thread.CurrentThread.CurrentUICulture.Name == "en-En")
-                    return 1;
+                if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
+                    return 0;
                 else if (Thread.CurrentThread.CurrentUICulture.Name == "fr-FR")
-                    return 2;
+                    return 1;
                 else
                     return 0;
             }
@@ -25,9 +25,9 @@ namespace Gweb.Models
                 //
                 // Set the thread's CurrentUICulture.
                 //
-                if (value == 1)
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-EN");
-                else if (value == 2)
+                if (value == 0)
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                else if (value == 1)
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
                 else
                     Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;

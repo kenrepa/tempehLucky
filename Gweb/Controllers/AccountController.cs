@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace Gweb.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         // GET: Account
         public ActionResult Index()
