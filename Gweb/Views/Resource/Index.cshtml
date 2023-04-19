@@ -1,0 +1,698 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Gweb.Models.PayInfo
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="wrapper">
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1>Lucky Tempeh, high protein food that provides amazing health benefit</h1>
+                        <h2>
+                            Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals.
+                        </h2>
+                        <div class="buttons">
+
+                            <a href="#pricing-table" class="btn btn-learn">Order Now</a>
+                            <a href="#info_tempeh" class="btn btn-learn">Learn About Tempeh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrolldown">
+            <a id="scroll" href="#features" class="scroll"></a>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>OUR BEST PRODUCTS</h2>
+                        <p>
+                            Our tempeh is an original Indonesian recipe with added sugar or sodium. <br>
+                            It is 100% organic, and uses high quality soy beans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-easel"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Regular Soy Bean Tempeh</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s">
+                            Tempeh is a fermented, high-protein and
+                            plant-based food made with soybeans <br>
+                            It is easy to cook and it is delightful addition to your main dish or can be an excellent<br>
+                            snack keeping you both strong and healthy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbucket"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Non GMO Soy Bean Tempeh</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s">
+                            Our tempeh uses organic and non GMO soy bean<br>
+                            It is very nutritious and uses natural ingredients <br>
+                            It is Gluten-free and super healthy for daily consumption
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbrush"></i>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Mung Bean Tempeh</h4>
+                        <p class="wow fadeInUp" data-wow-delay=".5s">
+                            Alternative beans can be used to make tempeh.<br>
+                            Provides maximum nutrition and taste delicious<br>
+                            Increased water and vitamin C compared to the <br>
+                            soy beans.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*<section>
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Learn About Tempeh</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".3s" style="margin-left:50px;">
+                            <h2>Tempeh Vitamins</h2>
+                            <p>
+                                Tempeh contains a multitude of vitamins that can help you stay healthy.
+                                It contains vitamins such as:
+                                - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                                found in meat.
+                                - Vitamin B6, which increases brain function and helps your immune system. <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".5s" style="margin-left:150px;">
+                            <h2>Tempeh Minerals</h2>
+                            <p>
+                                Tempeh contains many minerals. The most notable are the following: <br>
+                                - Calcium <br>
+                                - Iron <br>
+                                - Magnesium<br>
+                                - Phosphorus<br>
+                                - Potassium<br>
+                                - Zinc<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".7s" style="margin-left:250px;">
+                            <h2>Tempeh Health Benefits</h2>
+                            <p>
+                                Tempeh has multiple health benefits:
+                                It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                                in comparison to other foods such as tofu.
+                                It can lower cholesterol levels, which can help reduce heart disease.
+                                It can help with weight management as it can make you feel full due
+                                the protein and fiber. <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    @*<section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h2>LATEST WORKS</h2>
+                            <p>
+                                Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously
+                            </p>
+                        </div>
+                        <div class="block">
+                            <div class="recent-work-mixMenu">
+                                <ul>
+                                    <li><button class="filter" data-filter="all">All</button></li>
+                                    <li><button class="filter" data-filter=".category-2">Printing</button></li>
+                                    <li><button class="filter" data-filter=".category-1">Web</button></li>
+                                    <li><button class="filter" data-filter=".category-2">Illustration</button></li>
+                                    <li><button class="filter" data-filter=".category-1">Media</button></li>
+                                </ul>
+                            </div>
+                            <div class="recent-work-pic">
+                                <ul id="mixed-items">
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="1">
+                                        <a class="example-image-link" href="img/work1.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work1.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="2">
+                                        <a class="example-image-link" href="img/work2.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work2.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="3">
+                                        <a class="example-image-link" href="img/work3.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work3.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="4">
+                                        <a class="example-image-link" href="img/work4.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work4.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-1 col-md-4 col-xs-6" data-my-order="5">
+                                        <a class="example-image-link" href="img/work5.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work5.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mix category-2 col-md-4 col-xs-6" data-my-order="6">
+                                        <a class="example-image-link" href="img/work6.jpg" data-lightbox="example-set">
+                                            <img class="img-responsive" src="img/work6.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Web design</h3>
+                                                <i class="ion-ios-plus-empty"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    @*<section id="play-video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="wow fadeInUp" data-wow-delay=".3s">GET THE TEMPLATE</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".5s">
+                                Dantes remained confused and silent by this explanation of
+                                the
+                            </p>
+                            <a href="https://vimeo.com/channels/staffpicks/145743834" class="html5lightbox" data-width=800
+                               data-height=400>
+                                <div class="button ion-ios-play-outline wow zoomIn" data-wow-delay=".3s"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    @*<section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>CREATIVE TEAM</h2>
+                        <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".3s">
+                            <img src="img/team-img1.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Lucky Wibowo <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".6s">
+                            <img src="img/team-img2.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Andy  <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-sm-4 col-xs-6">
+                        <div class="block wow fadeInLeft" data-wow-delay=".9s">
+                            <img src="img/team-img3.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>ROBERT SMITH <span>Product Designer</span></h3>
+                                <span class="icon"><i class="ion-quote"></i></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <section id="pricing-table">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>PRICING TABLE</h2>
+                    <p>Check out these unbeatable prices. <br> You won't want to miss it.'</p>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="block text-center wow fadeInLeft" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Regular Tempeh 300g</h4>
+                                <p>&#36; 6 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <img src="~/img/tempeh_img1.png" class="img-thumbnail" alt="tempeh1">
+                            </li>
+                            <li>
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                {
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                    </div>
+                                    @Html.HiddenFor(m => m.Price, new { Value = "6" })
+                                    @Html.HiddenFor(m => m.ItemName, new { Value = "Regular Tempeh 300g" })
+                                    <br />
+                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="block text-center wow zoomIn" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Non-GMO Tempeh 300g</h4>
+                                <p>&#36; 10 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <img src="~/img/tempeh_img2.png" class="img-thumbnail" alt="tempeh1">
+                            </li>
+                            <li>
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                {
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                    </div>
+                                    @Html.HiddenFor(m => m.Price, new { Value = "10" })
+                                    @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh 300g" })
+                                    <br />
+                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                    <div class="block text-center wow fadeInRight" data-wow-delay=".3s">
+                        <ul>
+                            <li>
+                                <h4>Tempeh Bar</h4>
+                                <p>&#36; 6 <span>/pcs</span></p>
+                            </li>
+                            <li>
+                                <img src="~/img/tempeh2.jpg" class="img-thumbnail" alt="tempeh1">
+                            </li>
+                            <li>
+                                <!-- Replace "test" with your own sandbox Business account app client ID -->
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                {
+                                    <div style="display:inline-block">
+                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                    </div>
+                                    @Html.HiddenFor(m => m.Price, new { Value = "6" })
+                                    @Html.HiddenFor(m => m.ItemName, new { Value = "Tempeh Bar 150g" })
+                                    <br />
+                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info_tempeh" style="margin-top:10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Learn More About Tempeh</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-easel"></i>
+                        </div>
+                        <h2>Tempeh Vitamins</h2>
+                        <p>
+                            Tempeh contains a multitude of vitamins that can help you stay healthy.
+                            It contains vitamins such as: <br>
+                            - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                            found in meat.<br>
+                            - Vitamin B6, which increases brain function and helps your immune system. <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbucket"></i>
+                        </div>
+                        <h2>Tempeh Minerals</h2>
+                        <p>
+                            Tempeh contains many minerals. The most notable are the following: <br>
+                            - Calcium <br>
+                            - Iron <br>
+                            - Magnesium<br>
+                            - Phosphorus<br>
+                            - Potassium<br>
+                            - Zinc<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+                    <div class="feature-block text-center">
+                        <div class="icon-box">
+                            <i class="ion-paintbrush"></i>
+                        </div>
+                        <h2>Tempeh Health Benefits</h2>
+                        <p>
+                            Tempeh has multiple health benefits:<br>
+                            It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                            in comparison to other foods such as tofu.<br>
+                            It can lower cholesterol levels, which can help reduce heart disease.<br>
+                            It can help with weight management as it can make you feel full due
+                            the protein and fiber. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Blog</h2>
+                        <p>
+                            Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously
+                        </p>
+                    </div>
+                    <div id="blog-post" class="owl-carousel">
+                        <div>
+                            <div class="block">
+                                <img src="img/blog/blog-1.jpg" alt="" class="img-responsive">
+                                <div class="content">
+                                    <h4><a href="blog.html">Hey,This is a blog title</a></h4>
+                                    <small>By admin / Sept 18, 2014</small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque repudiandae nihil
+                                        qui debitis atque necessitatibus aliquam, consequuntur autem!
+                                    </p>
+                                    <a href="blog.html" class="btn btn-read">Read More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img src="img/blog/blog-2.jpg" alt="" class="img-responsive">
+                                <div class="content">
+                                    <h4><a href="blog.html">Hey,This is a blog title</a></h4>
+                                    <small>By admin / Sept 18, 2014</small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque repudiandae nihil
+                                        qui debitis atque necessitatibus aliquam, consequuntur autem!
+                                    </p>
+                                    <a href="blog.html" class="btn btn-read">Read More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img src="img/blog/blog-3.jpg" alt="" class="img-responsive">
+                                <div class="content">
+                                    <h4><a href="blog.html">Hey,This is a blog title</a></h4>
+                                    <small>By admin / Sept 18, 2014</small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque repudiandae nihil
+                                        qui debitis atque necessitatibus aliquam, consequuntur autem!
+                                    </p>
+                                    <a href="blog.html" class="btn btn-read">Read More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img src="img/blog/blog-4.jpg" alt="" class="img-responsive">
+                                <div class="content">
+                                    <h4><a href="blog.html">Hey,This is a blog title</a></h4>
+                                    <small>By admin / Sept 18, 2014</small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque repudiandae nihil
+                                        qui debitis atque necessitatibus aliquam, consequuntur autem!
+                                    </p>
+                                    <a href="blog.html" class="btn btn-read">Read More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img src="img/blog/blog-1.jpg" alt="" class="img-responsive">
+                                <div class="content">
+                                    <h4><a href="blog.html">Hey,This is a blog title</a></h4>
+                                    <small>By admin / Sept 18, 2014</small>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex itaque repudiandae nihil
+                                        qui debitis atque necessitatibus aliquam, consequuntur autem!
+                                    </p>
+                                    <a href="blog.html" class="btn btn-read">Read More</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>TESTIMONIAL</h2>
+                    <p>Dantes remained confused and silent by this explanation of the <br> thoughts which had unconsciously</p>
+                </div>
+                <div class="col col-md-6">
+                    <div class="media wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="img/service-img.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="media-heading">Jonathon Andrew</h4>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="media wow fadeInRight" data-wow-delay=".3s">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="img/service-img.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="media-heading">Jonathon Andrew</h4>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="media wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="img/service-img.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="media-heading">Jonathon Andrew</h4>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="media wow fadeInRight" data-wow-delay=".3s">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="img/service-img.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="media-heading">Jonathon Andrew</h4>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="client-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div id="Client_Logo" class="owl-carousel">
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo1.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo2.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo3.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo4.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo5.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo6.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo1.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo2.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo3.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo4.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo5.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img class="img-responsive" src="img/clientLogo/client-logo6.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2>CONTACT US</h2>
+                    |<div><a href="mailto:luckytempeh@gmail.com">Send us a message.</a></div>
+                </div>
+                <div class="col-md-6 col">
+                    <!-- map -->
+                    <div class="map">
+                        <div id="googleMap"></div>
+                    </div>
+                    <!--/map-->
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=CAD&vault=true"></script>
+

@@ -1,8 +1,8 @@
 ﻿
 <nav class="collapse navbar-collapse navbar-right" role="navigation">
     <ul id="nav" class="nav navbar-nav menu">
-        <li>@Html.ActionLink("EN", "Index", "Resources")</li>
+        <li>@Html.ActionLink("EN", "Index", "Resource", new { language = "en"}, null)</li>
 
-        <li>@Html.ActionLink("FR", "Index", "Resources")</li>
+        <li>@Html.ActionLink("FR", "Index", "Resource", new { language = "fr" }, null)</li>
     </ul>
 </nav>
