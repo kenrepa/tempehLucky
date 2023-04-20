@@ -61,6 +61,15 @@ namespace Gweb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lucky Tempeh, high protein food that provides amazing health benefits.
+        /// </summary>
+        public static string bannertxt {
+            get {
+                return ResourceManager.GetString("bannertxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string menucontact {
