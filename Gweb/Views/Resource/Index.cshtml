@@ -1,10 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-@model Gweb.Models.PayInfo
+﻿@model Gweb.Models.PayInfo
 @{
     ViewBag.Title = "Home Page";
 }
@@ -307,7 +301,7 @@
                                 <img src="~/img/tempeh_img1.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
                                         <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
@@ -333,7 +327,7 @@
                                 <img src="~/img/tempeh_img2.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
                                         <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
@@ -360,7 +354,7 @@
                             </li>
                             <li>
                                 <!-- Replace "test" with your own sandbox Business account app client ID -->
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
                                         <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>

@@ -14,22 +14,12 @@ namespace Gweb.Controllers
         private Payment payment;
         public ActionResult Index()
         {
+            HttpCookie cookie = new HttpCookie("Language");
+            if(cookie != null && cookie.Value != null)
+            Response.Cookies.Add(cookie);
             return View();
         }
          
-        public ActionResult Price()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
         public ActionResult PayPaymentWithPaypal(FormCollection form, string Cancel = null)
         {
             APIContext apiContext = PaypalConfiguration.GetAPIContext();
