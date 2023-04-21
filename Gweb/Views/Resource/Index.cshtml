@@ -9,15 +9,16 @@
                 <div class="col-md-12">
                     <div class="block">
                         <h1>
-                            @Html.Label("", Gweb.Resources.Language.bannertxt)
+                            @Html.Label("", Gweb.Resources.Language.bannertxt, new { @class = "block" })
                         </h1>
                         <h2>
                             @Html.Label("", Gweb.Resources.Language.subbanner)
                         </h2>
                         <div class="buttons">
 
-                            <a href="#pricing-table" class="btn btn-learn">@Html.Label("", Gweb.Resources.Language.orderbutt)</a>
-                            <a href="#info_tempeh" class="btn btn-learn">@Html.Label("", Gweb.Resources.Language.learnbutt)</a>
+                            <a href="#pricing-table" >@Html.Label("", Gweb.Resources.Language.orderbutt, new { @class="btn btn-learn"})</a>
+                            })</a>
+                            <a href="#info_tempeh" >@Html.Label("", Gweb.Resources.Language.learnbutt, new { @class="btn btn-learn"})</a>
                         </div>
                     </div>
                 </div>
