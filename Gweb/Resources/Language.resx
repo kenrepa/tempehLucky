@@ -120,6 +120,56 @@
   <data name="bannertxt" xml:space="preserve">
     <value>Lucky Tempeh, high protein food that provides amazing health benefits</value>
   </data>
+  <data name="barprice" xml:space="preserve">
+    <value>Tempeh Bar</value>
+  </data>
+  <data name="bestbanner" xml:space="preserve">
+    <value>OUR BEST PRODUCTS</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value> BUY NOW</value>
+  </data>
+  <data name="contacttitle" xml:space="preserve">
+    <value>CONTACT US</value>
+  </data>
+  <data name="gmoprice" xml:space="preserve">
+    <value>Non-GMO Tempeh 300g</value>
+  </data>
+  <data name="gmotempehtitle" xml:space="preserve">
+    <value>Non GMO Soy Bean Tempeh</value>
+  </data>
+  <data name="gmotempehtxt1" xml:space="preserve">
+    <value>Our tempeh uses organic and non GMO soy bean</value>
+  </data>
+  <data name="gmotempehtxt2" xml:space="preserve">
+    <value>It is very nutritious and uses natural ingredients</value>
+  </data>
+  <data name="gmotempehtxt3" xml:space="preserve">
+    <value>It is Gluten-free and super healthy for daily consumption</value>
+  </data>
+  <data name="healthtitle" xml:space="preserve">
+    <value>Tempeh Health Benefits</value>
+  </data>
+  <data name="healthtxt1" xml:space="preserve">
+    <value>Tempeh has multiple health benefits:</value>
+  </data>
+  <data name="healthtxt2" xml:space="preserve">
+    <value>It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                            in comparison to other foods such as tofu.</value>
+  </data>
+  <data name="healthtxt3" xml:space="preserve">
+    <value>It can lower cholesterol levels, which can help reduce heart disease.</value>
+  </data>
+  <data name="healthtxt4" xml:space="preserve">
+    <value>It can help with weight management as it can make you feel full due
+                            the protein and fiber.</value>
+  </data>
+  <data name="learnbutt" xml:space="preserve">
+    <value>Learn About Tempeh</value>
+  </data>
+  <data name="learntitle" xml:space="preserve">
+    <value>Learn More About Tempeh</value>
+  </data>
   <data name="menucontact" xml:space="preserve">
     <value>Contact</value>
   </data>
@@ -128,6 +178,101 @@
   </data>
   <data name="menuprice" xml:space="preserve">
     <value>Price</value>
+  </data>
+  <data name="mineraltitle" xml:space="preserve">
+    <value>Tempeh Minerals</value>
+  </data>
+  <data name="mineraltxt1" xml:space="preserve">
+    <value>Tempeh contains many minerals. The most notable are the following:</value>
+  </data>
+  <data name="mineraltxt2" xml:space="preserve">
+    <value>- Calcium</value>
+  </data>
+  <data name="mineraltxt3" xml:space="preserve">
+    <value>- Iron</value>
+  </data>
+  <data name="mineraltxt4" xml:space="preserve">
+    <value>- Magnesium</value>
+  </data>
+  <data name="mineraltxt5" xml:space="preserve">
+    <value>- Phosphorus</value>
+  </data>
+  <data name="mineraltxt6" xml:space="preserve">
+    <value>- Potassium</value>
+  </data>
+  <data name="mineraltxt7" xml:space="preserve">
+    <value>- Zinc</value>
+  </data>
+  <data name="mungtempehtitle" xml:space="preserve">
+    <value>Mung Bean Tempeh</value>
+  </data>
+  <data name="mungtempehtxt1" xml:space="preserve">
+    <value>Alternative beans can be used to make tempeh.</value>
+  </data>
+  <data name="mungtempehtxt2" xml:space="preserve">
+    <value>Provides maximum nutrition and taste delicious</value>
+  </data>
+  <data name="mungtempehtxt3" xml:space="preserve">
+    <value>Increased water and vitamin C compared to the</value>
+  </data>
+  <data name="mungtempehtxt4" xml:space="preserve">
+    <value>soy beans.</value>
+  </data>
+  <data name="orderbutt" xml:space="preserve">
+    <value>Order Now</value>
+  </data>
+  <data name="pricingtitle" xml:space="preserve">
+    <value>PRICING TABLE</value>
+  </data>
+  <data name="pricingtxt1" xml:space="preserve">
+    <value>Check out these unbeatable prices.</value>
+  </data>
+  <data name="pricingtxt2" xml:space="preserve">
+    <value>You won't want to miss it.</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="regprice" xml:space="preserve">
+    <value>Regular Tempeh 300g</value>
+  </data>
+  <data name="regtempehtitle" xml:space="preserve">
+    <value>Regular Soy Bean Tempeh</value>
+  </data>
+  <data name="regtempehtxt1" xml:space="preserve">
+    <value>Tempeh is a fermented, high-protein and plant-based food made with soybeans</value>
+  </data>
+  <data name="regtempehtxt2" xml:space="preserve">
+    <value>It is easy to cook and it is delightful addition to your main dish or can be an excellent</value>
+  </data>
+  <data name="regtempehtxt3" xml:space="preserve">
+    <value>snack keeping you both strong and healthy.</value>
+  </data>
+  <data name="sendmsg" xml:space="preserve">
+    <value>Send us a message.</value>
+  </data>
+  <data name="subbanner" xml:space="preserve">
+    <value>Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals.</value>
+  </data>
+  <data name="subbestbanner1" xml:space="preserve">
+    <value>Our tempeh is an original Indonesian recipe with added sugar or sodium.</value>
+  </data>
+  <data name="subbestbanner2" xml:space="preserve">
+    <value>It is 100% organic, and uses high quality soy beans.</value>
+  </data>
+  <data name="vitamintitle" xml:space="preserve">
+    <value>Tempeh Vitamins</value>
+  </data>
+  <data name="vitamintxt1" xml:space="preserve">
+    <value>Tempeh contains a multitude of vitamins that can help you stay healthy.
+                            It contains vitamins such as:</value>
+  </data>
+  <data name="vitamintxt2" xml:space="preserve">
+    <value>- Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                            found in meat.</value>
+  </data>
+  <data name="vitamintxt3" xml:space="preserve">
+    <value>- Vitamin B6, which increases brain function and helps your immune system.</value>
   </data>
   <data name="webtitle" xml:space="preserve">
     <value>Lucky Tempeh</value>

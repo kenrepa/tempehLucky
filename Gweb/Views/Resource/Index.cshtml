@@ -1,6 +1,6 @@
 ﻿@model Gweb.Models.PayInfo
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Lucky Tempeh";
 }
 <div class="wrapper">
     <section id="banner">
@@ -9,15 +9,15 @@
                 <div class="col-md-12">
                     <div class="block">
                         <h1>
-                            @Html.Label(Gweb.Resources.Language.bannertxt)
+                            @Html.Label("", Gweb.Resources.Language.bannertxt)
                         </h1>
                         <h2>
-                            Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals.
+                            @Html.Label("", Gweb.Resources.Language.subbanner)
                         </h2>
                         <div class="buttons">
 
-                            <a href="#pricing-table" class="btn btn-learn">Order Now</a>
-                            <a href="#info_tempeh" class="btn btn-learn">Learn About Tempeh</a>
+                            <a href="#pricing-table" class="btn btn-learn">@Html.Label("", Gweb.Resources.Language.orderbutt)</a>
+                            <a href="#info_tempeh" class="btn btn-learn">@Html.Label("", Gweb.Resources.Language.learnbutt)</a>
                         </div>
                     </div>
                 </div>
@@ -32,10 +32,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title">
-                        <h2>OUR BEST PRODUCTS</h2>
+                        <h2>@Html.Label("", Gweb.Resources.Language.bestbanner)</h2>
                         <p>
-                            Our tempeh is an original Indonesian recipe with added sugar or sodium. <br>
-                            It is 100% organic, and uses high quality soy beans.
+                            @Html.Label("", Gweb.Resources.Language.subbestbanner1)<br>
+                            @Html.Label("", Gweb.Resources.Language.subbestbanner2)
                         </p>
                     </div>
                 </div>
@@ -46,12 +46,11 @@
                         <div class="icon-box">
                             <i class="ion-easel"></i>
                         </div>
-                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Regular Soy Bean Tempeh</h4>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">@Html.Label("", Gweb.Resources.Language.regtempehtitle)</h4>
                         <p class="wow fadeInUp" data-wow-delay=".5s">
-                            Tempeh is a fermented, high-protein and
-                            plant-based food made with soybeans <br>
-                            It is easy to cook and it is delightful addition to your main dish or can be an excellent<br>
-                            snack keeping you both strong and healthy.
+                            @Html.Label("", Gweb.Resources.Language.regtempehtxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.regtempehtxt2)<br>
+                            @Html.Label(Gweb.Resources.Language.regtempehtxt3)
                         </p>
                     </div>
                 </div>
@@ -60,11 +59,11 @@
                         <div class="icon-box">
                             <i class="ion-paintbucket"></i>
                         </div>
-                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Non GMO Soy Bean Tempeh</h4>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">@Html.Label("", Gweb.Resources.Language.gmotempehtitle)</h4>
                         <p class="wow fadeInUp" data-wow-delay=".5s">
-                            Our tempeh uses organic and non GMO soy bean<br>
-                            It is very nutritious and uses natural ingredients <br>
-                            It is Gluten-free and super healthy for daily consumption
+                            @Html.Label("", Gweb.Resources.Language.gmotempehtxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.gmotempehtxt2)<br>
+                            @Html.Label("", Gweb.Resources.Language.gmotempehtxt3)
                         </p>
                     </div>
                 </div>
@@ -73,12 +72,12 @@
                         <div class="icon-box">
                             <i class="ion-paintbrush"></i>
                         </div>
-                        <h4 class="wow fadeInUp" data-wow-delay=".3s">Mung Bean Tempeh</h4>
+                        <h4 class="wow fadeInUp" data-wow-delay=".3s">@Html.Label("", Gweb.Resources.Language.mungtempehtitle)</h4>
                         <p class="wow fadeInUp" data-wow-delay=".5s">
-                            Alternative beans can be used to make tempeh.<br>
-                            Provides maximum nutrition and taste delicious<br>
-                            Increased water and vitamin C compared to the <br>
-                            soy beans.
+                            @Html.Label("", Gweb.Resources.Language.mungtempehtxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.mungtempehtxt2)<br>
+                            @Html.Label("", Gweb.Resources.Language.mungtempehtxt3)<br>
+                            @Html.Label("", Gweb.Resources.Language.mungtempehtxt4)
 
                         </p>
                     </div>
@@ -289,30 +288,30 @@
         <div class="container">
             <div class="row">
                 <div class="title">
-                    <h2>PRICING TABLE</h2>
-                    <p>Check out these unbeatable prices. <br> You won't want to miss it.'</p>
+                    <h2>@Html.Label("", Gweb.Resources.Language.pricingtitle)</h2>
+                    <p>@Html.Label("", Gweb.Resources.Language.pricingtxt1)<br>@Html.Label("", Gweb.Resources.Language.pricingtxt2)</p>
                 </div>
                 <div class="col-md-4 col">
                     <div class="block text-center wow fadeInLeft" data-wow-delay=".3s">
                         <ul>
                             <li>
-                                <h4>Regular Tempeh 300g</h4>
+                                <h4>@Html.Label("", Gweb.Resources.Language.regprice)</h4>
                                 <p>&#36; 6 <span>/pcs</span></p>
                             </li>
                             <li>
                                 <img src="~/img/tempeh_img1.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
-                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:left"><b>@Html.Label("", Gweb.Resources.Language.quantity)&nbsp;&nbsp; </b></span>
                                         <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
                                     </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Regular Tempeh 300g" })
                                     <br />
-                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                    <input type="submit" class="btn btn-buy" value="Buy" />
                                 }
                             </li>
                         </ul>
@@ -322,23 +321,24 @@
                     <div class="block text-center wow zoomIn" data-wow-delay=".3s">
                         <ul>
                             <li>
-                                <h4>Non-GMO Tempeh 300g</h4>
+                                <h4>@Html.Label(Gweb.Resources.Language.gmoprice)</h4>
                                 <p>&#36; 10 <span>/pcs</span></p>
                             </li>
                             <li>
                                 <img src="~/img/tempeh_img2.png" class="img-thumbnail" alt="tempeh1">
                             </li>
                             <li>
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
-                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
+                                        <span style="float:left"><b>@Html.Label("", Gweb.Resources.Language.quantity)&nbsp;&nbsp; </b></span>
                                         <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
                                     </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "10" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh 300g" })
                                     <br />
-                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                    <input type="submit" class="btn btn-buy" value="Buy" />
+
                                 }
                             </li>
                         </ul>
@@ -348,7 +348,7 @@
                     <div class="block text-center wow fadeInRight" data-wow-delay=".3s">
                         <ul>
                             <li>
-                                <h4>Tempeh Bar</h4>
+                                <h4>@Html.Label("", Gweb.Resources.Language.barprice)</h4>
                                 <p>&#36; 6 <span>/pcs</span></p>
                             </li>
                             <li>
@@ -356,16 +356,19 @@
                             </li>
                             <li>
                                 <!-- Replace "test" with your own sandbox Business account app client ID -->
-                                @using (Html.BeginForm("PayPaymentWithPaypal", "Resource", FormMethod.Post))
+                                @using (Html.BeginForm("PayPaymentWithPaypal", "Home", FormMethod.Post))
                                 {
                                     <div style="display:inline-block">
-                                        <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
-                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                        <span style="float:left"><b>@Html.Label("", Gweb.Resources.Language.quantity)&nbsp;&nbsp; </b></span>
+                                        <span style="float:right">
+                                            @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })
+                                            @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "error" })
+                                        </span>
                                     </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "6" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Tempeh Bar 150g" })
                                     <br />
-                                    <input type="submit" class="btn btn-buy" value="BUY NOW" />
+                                    <input type="submit" class="btn btn-buy" value="Buy" />
                                 }
                             </li>
                         </ul>
@@ -380,7 +383,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title">
-                        <h2>Learn More About Tempeh</h2>
+                        <h2>@Html.Label("", Gweb.Resources.Language.learntitle)</h2>
                     </div>
                 </div>
             </div>
@@ -390,13 +393,11 @@
                         <div class="icon-box">
                             <i class="ion-easel"></i>
                         </div>
-                        <h2>Tempeh Vitamins</h2>
+                        <h2>@Html.Label("", Gweb.Resources.Language.vitamintitle)</h2>
                         <p>
-                            Tempeh contains a multitude of vitamins that can help you stay healthy.
-                            It contains vitamins such as: <br>
-                            - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
-                            found in meat.<br>
-                            - Vitamin B6, which increases brain function and helps your immune system. <br>
+                            @Html.Label("", Gweb.Resources.Language.vitamintxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.vitamintxt2)<br>
+                            @Html.Label("", Gweb.Resources.Language.vitamintxt3)<br>
                         </p>
                     </div>
                 </div>
@@ -405,15 +406,15 @@
                         <div class="icon-box">
                             <i class="ion-paintbucket"></i>
                         </div>
-                        <h2>Tempeh Minerals</h2>
+                        <h2>@Html.Label("", Gweb.Resources.Language.mineraltitle)</h2>
                         <p>
-                            Tempeh contains many minerals. The most notable are the following: <br>
-                            - Calcium <br>
-                            - Iron <br>
-                            - Magnesium<br>
-                            - Phosphorus<br>
-                            - Potassium<br>
-                            - Zinc<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt2)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt3)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt4)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt5)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt6)<br>
+                            @Html.Label("", Gweb.Resources.Language.mineraltxt7)<br>
                         </p>
                     </div>
                 </div>
@@ -422,14 +423,12 @@
                         <div class="icon-box">
                             <i class="ion-paintbrush"></i>
                         </div>
-                        <h2>Tempeh Health Benefits</h2>
+                        <h2>@Html.Label("", Gweb.Resources.Language.healthtitle)</h2>
                         <p>
-                            Tempeh has multiple health benefits:<br>
-                            It is a fermented nutrient, this helps make the digestion of Tempeh much easier
-                            in comparison to other foods such as tofu.<br>
-                            It can lower cholesterol levels, which can help reduce heart disease.<br>
-                            It can help with weight management as it can make you feel full due
-                            the protein and fiber. <br>
+                            @Html.Label("", Gweb.Resources.Language.healthtxt1)<br>
+                            @Html.Label("", Gweb.Resources.Language.healthtxt2)<br>
+                            @Html.Label("", Gweb.Resources.Language.healthtxt3)<br>
+                            @Html.Label("", Gweb.Resources.Language.healthtxt4)<br>
                         </p>
                     </div>
                 </div>
@@ -671,8 +670,8 @@
         <div class="container">
             <div class="row">
                 <div class="title">
-                    <h2>CONTACT US</h2>
-                    |<div><a href="mailto:luckytempeh@gmail.com">Send us a message.</a></div>
+                    <h2>@Html.Label("", Gweb.Resources.Language.contacttitle)</h2>
+                    |<div><a href="mailto:luckytempeh@gmail.com">@Html.Label("", Gweb.Resources.Language.sendmsg)</a></div>
                 </div>
                 <div class="col-md-6 col">
                     <!-- map -->

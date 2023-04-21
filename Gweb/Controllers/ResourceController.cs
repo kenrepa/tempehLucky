@@ -1,4 +1,5 @@
-﻿using PayPal.Api;
+﻿using Gweb.Models;
+using PayPal.Api;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,12 @@ namespace Gweb.Controllers
             return View();
         }
 
+
+        [HttpPost]
+        public ActionResult Index(PayInfo payinfo)
+        {
+            return View();
+        }
         public ActionResult PayPaymentWithPaypal(FormCollection form, string Cancel = null)
         {
             APIContext apiContext = PaypalConfiguration.GetAPIContext();

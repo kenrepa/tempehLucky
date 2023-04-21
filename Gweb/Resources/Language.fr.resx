@@ -120,6 +120,56 @@
   <data name="bannertxt" xml:space="preserve">
     <value>Lucky Tempeh, nutriment hautement proteine et offre de nombreuse avantage pour la sante</value>
   </data>
+  <data name="barprice" xml:space="preserve">
+    <value>Barre de tempeh</value>
+  </data>
+  <data name="bestbanner" xml:space="preserve">
+    <value>NOS MEILLEURS PRODUITS</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value>ACHETER MAINTENANT</value>
+  </data>
+  <data name="contacttitle" xml:space="preserve">
+    <value>CONTACTEZ-NOUS</value>
+  </data>
+  <data name="gmoprice" xml:space="preserve">
+    <value>Tempeh sans OGM 300g</value>
+  </data>
+  <data name="gmotempehtitle" xml:space="preserve">
+    <value>Tempeh de soja sans OGM</value>
+  </data>
+  <data name="gmotempehtxt1" xml:space="preserve">
+    <value>Notre tempeh utilise des fèves de soja biologiques et non OGM</value>
+  </data>
+  <data name="gmotempehtxt2" xml:space="preserve">
+    <value>Il est très nutritif et utilise des ingrédients naturels</value>
+  </data>
+  <data name="gmotempehtxt3" xml:space="preserve">
+    <value>Il est sans gluten et super sain pour une consommation quotidienne</value>
+  </data>
+  <data name="healthtitle" xml:space="preserve">
+    <value>Bienfaits pour la santé du tempeh</value>
+  </data>
+  <data name="healthtxt1" xml:space="preserve">
+    <value>Le tempeh a de multiples bienfaits pour la santé :</value>
+  </data>
+  <data name="healthtxt2" xml:space="preserve">
+    <value>C'est un nutriment fermenté, cela aide à rendre la digestion du Tempeh beaucoup plus facile
+                            par rapport à d'autres aliments comme le tofu.</value>
+  </data>
+  <data name="healthtxt3" xml:space="preserve">
+    <value>Il peut abaisser le taux de cholestérol, ce qui peut aider à réduire les maladies cardiaques.</value>
+  </data>
+  <data name="healthtxt4" xml:space="preserve">
+    <value>Cela peut aider à la gestion du poids car cela peut vous faire sentir rassasié
+                            les protéines et les fibres.</value>
+  </data>
+  <data name="learnbutt" xml:space="preserve">
+    <value>En savoir plus sur le tempeh</value>
+  </data>
+  <data name="learntitle" xml:space="preserve">
+    <value>En savoir plus sur le tempeh</value>
+  </data>
   <data name="menucontact" xml:space="preserve">
     <value>Contactez nous</value>
   </data>
@@ -128,6 +178,101 @@
   </data>
   <data name="menuprice" xml:space="preserve">
     <value>Prix</value>
+  </data>
+  <data name="mineraltitle" xml:space="preserve">
+    <value>Tempeh Minéraux</value>
+  </data>
+  <data name="mineraltxt1" xml:space="preserve">
+    <value>Le tempeh contient de nombreux minéraux. Les plus notables sont les suivants :</value>
+  </data>
+  <data name="mineraltxt2" xml:space="preserve">
+    <value>- Calcium</value>
+  </data>
+  <data name="mineraltxt3" xml:space="preserve">
+    <value>- Fer</value>
+  </data>
+  <data name="mineraltxt4" xml:space="preserve">
+    <value>- Magnésium</value>
+  </data>
+  <data name="mineraltxt5" xml:space="preserve">
+    <value>- Phosphore</value>
+  </data>
+  <data name="mineraltxt6" xml:space="preserve">
+    <value>- Potassium</value>
+  </data>
+  <data name="mineraltxt7" xml:space="preserve">
+    <value>- Zinc</value>
+  </data>
+  <data name="mungtempehtitle" xml:space="preserve">
+    <value>Tempeh aux haricots mungo</value>
+  </data>
+  <data name="mungtempehtxt1" xml:space="preserve">
+    <value>Des haricots alternatifs peuvent être utilisés pour faire du tempeh.</value>
+  </data>
+  <data name="mungtempehtxt2" xml:space="preserve">
+    <value>Fournit une nutrition maximale et un goût délicieux</value>
+  </data>
+  <data name="mungtempehtxt3" xml:space="preserve">
+    <value>Augmentation de l'eau et de la vitamine C par rapport à la</value>
+  </data>
+  <data name="mungtempehtxt4" xml:space="preserve">
+    <value>fèves de soja.</value>
+  </data>
+  <data name="orderbutt" xml:space="preserve">
+    <value>Commandez maintenant</value>
+  </data>
+  <data name="pricingtitle" xml:space="preserve">
+    <value>TABLEAU DES PRIX</value>
+  </data>
+  <data name="pricingtxt1" xml:space="preserve">
+    <value>Découvrez ces prix imbattables.</value>
+  </data>
+  <data name="pricingtxt2" xml:space="preserve">
+    <value>Vous ne voudrez pas le manquer.</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="regprice" xml:space="preserve">
+    <value>Tempeh Régulier 300g</value>
+  </data>
+  <data name="regtempehtitle" xml:space="preserve">
+    <value>Tempeh de soja régulier</value>
+  </data>
+  <data name="regtempehtxt1" xml:space="preserve">
+    <value>Le tempeh est un fermenté, riche en protéines et aliments végétaux à base de soja</value>
+  </data>
+  <data name="regtempehtxt2" xml:space="preserve">
+    <value>Il est facile à cuisiner et c'est un ajout délicieux à votre plat principal ou peut être un excellent</value>
+  </data>
+  <data name="regtempehtxt3" xml:space="preserve">
+    <value>collation vous gardant à la fois fort et en bonne santé.</value>
+  </data>
+  <data name="sendmsg" xml:space="preserve">
+    <value>Envoie-nous un message.</value>
+  </data>
+  <data name="subbanner" xml:space="preserve">
+    <value>Sain et nutritif avec une teneur élevée en protéines, des prébiotiques et une variété de vitamines et de minéraux.</value>
+  </data>
+  <data name="subbestbanner1" xml:space="preserve">
+    <value>Notre tempeh est une recette indonésienne originale additionnée de sucre ou de sodium.</value>
+  </data>
+  <data name="subbestbanner2" xml:space="preserve">
+    <value>Il est 100% biologique et utilise des graines de soja de haute qualité.</value>
+  </data>
+  <data name="vitamintitle" xml:space="preserve">
+    <value>Vitamines Tempeh</value>
+  </data>
+  <data name="vitamintxt1" xml:space="preserve">
+    <value>Le tempeh contient une multitude de vitamines qui peuvent vous aider à rester en bonne santé.
+                            Il contient des vitamines telles que :</value>
+  </data>
+  <data name="vitamintxt2" xml:space="preserve">
+    <value>- Vitamine B12, qui aide à la formation de vos globules rouges, une vitamine habituellement
+                            trouve dans la viande.</value>
+  </data>
+  <data name="vitamintxt3" xml:space="preserve">
+    <value>- Vitamine B6, qui augmente les fonctions cérébrales et aide votre système immunitaire.</value>
   </data>
   <data name="webtitle" xml:space="preserve">
     <value>Chez Lucky Tempeh</value>

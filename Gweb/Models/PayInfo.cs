@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -11,6 +12,8 @@ namespace Gweb.Models
     {
         public string ItemName { get; set; }
         public string Currency { get; set; }
+
+        [Required(ErrorMessage = "required")]
         public string Quantity { get; set; }
         public string Price { get; set; }
         public string SubTotal { get; set; }

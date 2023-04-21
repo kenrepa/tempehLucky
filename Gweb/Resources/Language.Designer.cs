@@ -70,6 +70,152 @@ namespace Gweb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tempeh Bar.
+        /// </summary>
+        public static string barprice {
+            get {
+                return ResourceManager.GetString("barprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OUR BEST PRODUCTS.
+        /// </summary>
+        public static string bestbanner {
+            get {
+                return ResourceManager.GetString("bestbanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  BUY NOW.
+        /// </summary>
+        public static string buy {
+            get {
+                return ResourceManager.GetString("buy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CONTACT US.
+        /// </summary>
+        public static string contacttitle {
+            get {
+                return ResourceManager.GetString("contacttitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non-GMO Tempeh 300g.
+        /// </summary>
+        public static string gmoprice {
+            get {
+                return ResourceManager.GetString("gmoprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non GMO Soy Bean Tempeh.
+        /// </summary>
+        public static string gmotempehtitle {
+            get {
+                return ResourceManager.GetString("gmotempehtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our tempeh uses organic and non GMO soy bean.
+        /// </summary>
+        public static string gmotempehtxt1 {
+            get {
+                return ResourceManager.GetString("gmotempehtxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is very nutritious and uses natural ingredients.
+        /// </summary>
+        public static string gmotempehtxt2 {
+            get {
+                return ResourceManager.GetString("gmotempehtxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is Gluten-free and super healthy for daily consumption.
+        /// </summary>
+        public static string gmotempehtxt3 {
+            get {
+                return ResourceManager.GetString("gmotempehtxt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh Health Benefits.
+        /// </summary>
+        public static string healthtitle {
+            get {
+                return ResourceManager.GetString("healthtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh has multiple health benefits:.
+        /// </summary>
+        public static string healthtxt1 {
+            get {
+                return ResourceManager.GetString("healthtxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+        ///                            in comparison to other foods such as tofu..
+        /// </summary>
+        public static string healthtxt2 {
+            get {
+                return ResourceManager.GetString("healthtxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It can lower cholesterol levels, which can help reduce heart disease..
+        /// </summary>
+        public static string healthtxt3 {
+            get {
+                return ResourceManager.GetString("healthtxt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It can help with weight management as it can make you feel full due
+        ///                            the protein and fiber..
+        /// </summary>
+        public static string healthtxt4 {
+            get {
+                return ResourceManager.GetString("healthtxt4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn About Tempeh.
+        /// </summary>
+        public static string learnbutt {
+            get {
+                return ResourceManager.GetString("learnbutt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn More About Tempeh.
+        /// </summary>
+        public static string learntitle {
+            get {
+                return ResourceManager.GetString("learntitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string menucontact {
@@ -93,6 +239,287 @@ namespace Gweb.Resources {
         public static string menuprice {
             get {
                 return ResourceManager.GetString("menuprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh Minerals.
+        /// </summary>
+        public static string mineraltitle {
+            get {
+                return ResourceManager.GetString("mineraltitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh contains many minerals. The most notable are the following:.
+        /// </summary>
+        public static string mineraltxt1 {
+            get {
+                return ResourceManager.GetString("mineraltxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Calcium.
+        /// </summary>
+        public static string mineraltxt2 {
+            get {
+                return ResourceManager.GetString("mineraltxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Iron.
+        /// </summary>
+        public static string mineraltxt3 {
+            get {
+                return ResourceManager.GetString("mineraltxt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Magnesium.
+        /// </summary>
+        public static string mineraltxt4 {
+            get {
+                return ResourceManager.GetString("mineraltxt4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Phosphorus.
+        /// </summary>
+        public static string mineraltxt5 {
+            get {
+                return ResourceManager.GetString("mineraltxt5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Potassium.
+        /// </summary>
+        public static string mineraltxt6 {
+            get {
+                return ResourceManager.GetString("mineraltxt6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Zinc.
+        /// </summary>
+        public static string mineraltxt7 {
+            get {
+                return ResourceManager.GetString("mineraltxt7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mung Bean Tempeh.
+        /// </summary>
+        public static string mungtempehtitle {
+            get {
+                return ResourceManager.GetString("mungtempehtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alternative beans can be used to make tempeh..
+        /// </summary>
+        public static string mungtempehtxt1 {
+            get {
+                return ResourceManager.GetString("mungtempehtxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provides maximum nutrition and taste delicious.
+        /// </summary>
+        public static string mungtempehtxt2 {
+            get {
+                return ResourceManager.GetString("mungtempehtxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Increased water and vitamin C compared to the.
+        /// </summary>
+        public static string mungtempehtxt3 {
+            get {
+                return ResourceManager.GetString("mungtempehtxt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to soy beans..
+        /// </summary>
+        public static string mungtempehtxt4 {
+            get {
+                return ResourceManager.GetString("mungtempehtxt4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order Now.
+        /// </summary>
+        public static string orderbutt {
+            get {
+                return ResourceManager.GetString("orderbutt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PRICING TABLE.
+        /// </summary>
+        public static string pricingtitle {
+            get {
+                return ResourceManager.GetString("pricingtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check out these unbeatable prices..
+        /// </summary>
+        public static string pricingtxt1 {
+            get {
+                return ResourceManager.GetString("pricingtxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You won&apos;t want to miss it..
+        /// </summary>
+        public static string pricingtxt2 {
+            get {
+                return ResourceManager.GetString("pricingtxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantity.
+        /// </summary>
+        public static string quantity {
+            get {
+                return ResourceManager.GetString("quantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular Tempeh 300g.
+        /// </summary>
+        public static string regprice {
+            get {
+                return ResourceManager.GetString("regprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular Soy Bean Tempeh.
+        /// </summary>
+        public static string regtempehtitle {
+            get {
+                return ResourceManager.GetString("regtempehtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh is a fermented, high-protein and plant-based food made with soybeans.
+        /// </summary>
+        public static string regtempehtxt1 {
+            get {
+                return ResourceManager.GetString("regtempehtxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is easy to cook and it is delightful addition to your main dish or can be an excellent.
+        /// </summary>
+        public static string regtempehtxt2 {
+            get {
+                return ResourceManager.GetString("regtempehtxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to snack keeping you both strong and healthy..
+        /// </summary>
+        public static string regtempehtxt3 {
+            get {
+                return ResourceManager.GetString("regtempehtxt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send us a message..
+        /// </summary>
+        public static string sendmsg {
+            get {
+                return ResourceManager.GetString("sendmsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals..
+        /// </summary>
+        public static string subbanner {
+            get {
+                return ResourceManager.GetString("subbanner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our tempeh is an original Indonesian recipe with added sugar or sodium..
+        /// </summary>
+        public static string subbestbanner1 {
+            get {
+                return ResourceManager.GetString("subbestbanner1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is 100% organic, and uses high quality soy beans..
+        /// </summary>
+        public static string subbestbanner2 {
+            get {
+                return ResourceManager.GetString("subbestbanner2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh Vitamins.
+        /// </summary>
+        public static string vitamintitle {
+            get {
+                return ResourceManager.GetString("vitamintitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tempeh contains a multitude of vitamins that can help you stay healthy.
+        ///                            It contains vitamins such as:.
+        /// </summary>
+        public static string vitamintxt1 {
+            get {
+                return ResourceManager.GetString("vitamintxt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+        ///                            found in meat..
+        /// </summary>
+        public static string vitamintxt2 {
+            get {
+                return ResourceManager.GetString("vitamintxt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to - Vitamin B6, which increases brain function and helps your immune system..
+        /// </summary>
+        public static string vitamintxt3 {
+            get {
+                return ResourceManager.GetString("vitamintxt3", resourceCulture);
             }
         }
         

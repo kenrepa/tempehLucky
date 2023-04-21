@@ -1,4 +1,5 @@
-﻿using PayPal.Api;
+﻿using Gweb.Models;
+using PayPal.Api;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,16 @@ namespace Gweb.Controllers
         public ActionResult Index()
         {
             HttpCookie cookie = new HttpCookie("Language");
-            if(cookie != null && cookie.Value != null)
-            Response.Cookies.Add(cookie);
+            if (cookie != null && cookie.Value != null)
+                Response.Cookies.Add(cookie);
             return View();
         }
-         
+
+        [HttpPost]
+        public ActionResult Index(PayInfo payinfo)
+        {
+            return View();
+        }
         public ActionResult PayPaymentWithPaypal(FormCollection form, string Cancel = null)
         {
             APIContext apiContext = PaypalConfiguration.GetAPIContext();

@@ -1,16 +1,17 @@
 ﻿@model Gweb.Models.PayInfo
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Lucky Tempeh";
 }
+
 <div class="wrapper">
     <section id="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <h1>@Html.Label(Gweb.Resources.Language.bannertxt)</h1>
+                        <h1>@Html.Label("", Gweb.Resources.Language.bannertxt)</h1>
                         <h2>
-                            Healthy and nutritious with high protein, prebiotics and a variety of vitamins and minerals.
+                            @Html.Label("", Gweb.Resources.Language.subbanner)
                         </h2>
                         <div class="buttons">
 
@@ -85,53 +86,53 @@
         </div>
     </section>
     @*<section>
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    <h2>Learn About Tempeh</h2>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".3s" style="margin-left:50px;">
-                        <h2>Tempeh Vitamins</h2>
-                        <p>
-                            Tempeh contains a multitude of vitamins that can help you stay healthy.
-                            It contains vitamins such as:
-                            - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
-                            found in meat.
-                            - Vitamin B6, which increases brain function and helps your immune system. <br>
-                        </p>
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Learn About Tempeh</h2>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".5s" style="margin-left:150px;">
-                        <h2>Tempeh Minerals</h2>
-                        <p>
-                            Tempeh contains many minerals. The most notable are the following: <br>
-                            - Calcium <br>
-                            - Iron <br>
-                            - Magnesium<br>
-                            - Phosphorus<br>
-                            - Potassium<br>
-                            - Zinc<br>
-                        </p>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".3s" style="margin-left:50px;">
+                            <h2>Tempeh Vitamins</h2>
+                            <p>
+                                Tempeh contains a multitude of vitamins that can help you stay healthy.
+                                It contains vitamins such as:
+                                - Vitamin B12, which helps the formation of your red blood cells, a vitamin usually
+                                found in meat.
+                                - Vitamin B6, which increases brain function and helps your immune system. <br>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="block wow fadeInRight" data-wow-delay=".7s" style="margin-left:250px;">
-                        <h2>Tempeh Health Benefits</h2>
-                        <p>
-                            Tempeh has multiple health benefits:
-                            It is a fermented nutrient, this helps make the digestion of Tempeh much easier
-                            in comparison to other foods such as tofu.
-                            It can lower cholesterol levels, which can help reduce heart disease.
-                            It can help with weight management as it can make you feel full due
-                            the protein and fiber. <br>
-                        </p>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".5s" style="margin-left:150px;">
+                            <h2>Tempeh Minerals</h2>
+                            <p>
+                                Tempeh contains many minerals. The most notable are the following: <br>
+                                - Calcium <br>
+                                - Iron <br>
+                                - Magnesium<br>
+                                - Phosphorus<br>
+                                - Potassium<br>
+                                - Zinc<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="block wow fadeInRight" data-wow-delay=".7s" style="margin-left:250px;">
+                            <h2>Tempeh Health Benefits</h2>
+                            <p>
+                                Tempeh has multiple health benefits:
+                                It is a fermented nutrient, this helps make the digestion of Tempeh much easier
+                                in comparison to other foods such as tofu.
+                                It can lower cholesterol levels, which can help reduce heart disease.
+                                It can help with weight management as it can make you feel full due
+                                the protein and fiber. <br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>*@
+        </section>*@
     @*<section id="portfolio">
             <div class="container">
                 <div class="row">
@@ -331,7 +332,10 @@
                                 {
                                     <div style="display:inline-block">
                                         <span style="float:left"><b>Quantity&nbsp;&nbsp; </b></span>
-                                        <span style="float:right">@Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })</span>
+                                        <span style="float:right">
+                                            @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", style = "width:70px;", maxLength = "2" })
+                                            @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "error" })
+                                        </span>
                                     </div>
                                     @Html.HiddenFor(m => m.Price, new { Value = "10" })
                                     @Html.HiddenFor(m => m.ItemName, new { Value = "Non-GMO Tempeh 300g" })
