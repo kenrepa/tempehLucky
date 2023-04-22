@@ -43,7 +43,7 @@
             </div>
 
             <!-- main nav -->
-            <nav class="collapse navbar-collapse navbar" role="navigation">
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav menu">
                     <li>@Html.ActionLink(Gweb.Resources.Language.menuhome, "Index", "Resource", protocol: null, hostName: null, fragment: "top", routeValues: null, htmlAttributes: null)</li>
                     <li>
@@ -52,8 +52,11 @@
                     <li>
                         @Html.ActionLink(Gweb.Resources.Language.menucontact, "Index", "Resource", protocol: null, hostName: null, fragment: "contact-form", routeValues: null, htmlAttributes: null)
                     </li>
+                    <li>
+                        @Html.Partial("_LanguageSwitcher")
+                    </li>
                 </ul>
-                @Html.Partial("_LanguageSwitcher")
+               
             </nav>
             <!-- /main nav -->
 

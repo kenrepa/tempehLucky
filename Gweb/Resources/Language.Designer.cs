@@ -468,7 +468,7 @@ namespace Gweb.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Our tempeh is an original Indonesian recipe with added sugar or sodium..
+        ///   Looks up a localized string similar to Our tempeh is an original Indonesian recipe with no added sugar or sodium..
         /// </summary>
         public static string subbestbanner1 {
             get {
