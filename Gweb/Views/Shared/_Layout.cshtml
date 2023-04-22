@@ -41,10 +41,9 @@
                 </h1>
                 <!-- /logo -->
             </div>
-
             <!-- main nav -->
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                <ul id="nav" class="nav navbar-nav menu">
+            <nav class="collapse navbar-collapse navbar" role="navigation">
+                <ul id="nav" class="nav navbar-nav menu" style="margin-left:30px; padding-top:30px">
                     <li>@Html.ActionLink(Gweb.Resources.Language.menuhome, "Index", "Resource", protocol: null, hostName: null, fragment: "top", routeValues: null, htmlAttributes: null)</li>
                     <li>
                         @Html.ActionLink(Gweb.Resources.Language.menuprice, "Index", "Resource", protocol: null, hostName: null, fragment: "pricing-table", routeValues: null, htmlAttributes: null)
@@ -52,11 +51,9 @@
                     <li>
                         @Html.ActionLink(Gweb.Resources.Language.menucontact, "Index", "Resource", protocol: null, hostName: null, fragment: "contact-form", routeValues: null, htmlAttributes: null)
                     </li>
-                    <li>
-                        @Html.Partial("_LanguageSwitcher")
-                    </li>
+
                 </ul>
-               
+                <p class="h6">@Html.Partial("_LanguageSwitcher")</p>               
             </nav>
             <!-- /main nav -->
 

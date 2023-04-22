@@ -177,6 +177,7 @@ header .navbar {
 .navbar-toggle {
   border-color: #333;
   transition: 0.3s;
+  margin-right:60px;
 }
 .navbar-toggle .icon-bar {
   background: #333;
